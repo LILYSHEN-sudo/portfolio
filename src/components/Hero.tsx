@@ -1,17 +1,20 @@
-import { Button } from './ui/button';
-import { Github, Linkedin, Mail, Download } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { Button } from "./ui/button";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="snap-start h-screen flex items-center justify-center bg-gradient-to-b from-background to-secondary/20">
+    <section
+      id="home"
+      className="snap-start h-screen flex items-center justify-center bg-gradient-to-b from-background to-secondary/20"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -30,30 +33,40 @@ const Hero = () => {
             {/* Right Side - Content */}
             <div className="order-2 lg:order-2 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4">
-                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Hi</span>
-                <span className="inline-block animate-wave" style={{ fontSize: '1em' }}>👋</span>
-                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">, I'm Lily</span>
+                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                  Hi
+                </span>
+                <span
+                  className="inline-block animate-wave"
+                  style={{ fontSize: "1em" }}
+                >
+                  👋
+                </span>
+                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                  , I'm Lily
+                </span>
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6">
                 Software Developer
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
-                Passionate about creating innovative web applications and solving complex problems with clean, efficient code. 
+                Passionate about creating innovative web applications and
+                solving complex problems with clean, efficient code.
                 Specializing in React, Node.js, and modern web technologies.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <Button 
-                  size="lg" 
-                  onClick={() => scrollToSection('projects')}
+                <Button
+                  size="lg"
+                  onClick={() => scrollToSection("projects")}
                   className="w-full sm:w-auto"
                 >
                   View My Work
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   size="lg"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection("contact")}
                   className="w-full sm:w-auto"
                 >
                   <Mail className="mr-2 h-5 w-5" />
@@ -62,39 +75,35 @@ const Hero = () => {
               </div>
 
               <div className="flex justify-center lg:justify-start items-center space-x-6">
-                <a 
-                  href="https://github.com/dag12y" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/LILYSHEN-sudo"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Github className="h-6 w-6" />
                 </a>
-                <a 
-                  href="https://www.linkedin.com/in/dagm-yibabe-46b85b353/" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/le-shen-/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a 
-                  href="mailto:dagimyibabe19@gmail.com"
+                <a
+                  href="mailto:leshen1.eng@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="h-6 w-6" />
                 </a>
-                <Button 
-                  variant="ghost" 
+                <Button
+                  variant="ghost"
                   size="sm"
                   className="text-muted-foreground hover:text-primary"
                   asChild
                 >
-                  <a
-                    href="https://drive.google.com/uc?export=download&id=1crrOHNxQ95VJ9fNAL4X45xM8kiiXF2zw"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="" target="_blank" rel="noopener noreferrer">
                     <Download className="mr-2 h-4 w-4" />
                     Resume
                   </a>
