@@ -89,34 +89,6 @@ const Projects = () => {
       status: "Live",
       featured: true,
     },
-    {
-      id: 4,
-      title: "Amharic-Tigrigna Analyser",
-      description:
-        "A linguistic analysis tool that processes Amharic and Tigrigna texts for morphological and syntactic insights. Designed to support language researchers and learners.",
-      image: "https://i.postimg.cc/PxzDrZBC/Screenshot-2025-07-17-220555.png",
-      category: "Tools",
-      technologies: [
-        "Python",
-        "Natural Language Processing",
-        "Machine Learning",
-        "Flask",
-        "JavaScript",
-      ],
-      features: [
-        "Morphological analysis",
-        "Syntactic parsing",
-        "Text tokenization",
-        "Frequency distribution analysis",
-        "User-friendly interface",
-      ],
-      links: {
-        live: null,
-        github: "https://github.com/dag12y/amharic-tigrigna-analyser",
-      },
-      status: "Completed",
-      featured: true,
-    },
   ];
   const categories = [
     "All",

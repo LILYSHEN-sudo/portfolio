@@ -1,36 +1,47 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Mail, Github, Linkedin, Heart } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { Mail, Github, Linkedin, Heart } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
     {
       icon: <Github className="h-6 w-6" />,
       label: "GitHub",
-      href: "https://github.com/dag12y",
-      color: "hover:text-gray-700 dark:hover:text-gray-300"
+      href: "https://github.com/LILYSHEN-sudo/dag12y",
+      color: "hover:text-gray-700 dark:hover:text-gray-300",
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/dagm-yibabe-46b85b353/",
-      color: "hover:text-blue-600"
+      href: "https://www.linkedin.com/in/le-shen-/",
+      color: "hover:text-blue-600",
     },
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      href: "mailto:dagimyibabe19@gmail.com",
-      color: "hover:text-red-500"
-    }
+      href: "mailto:leshen1.eng@gmail.com",
+      color: "hover:text-red-500",
+    },
   ];
 
   return (
-    <section id="contact" className="snap-start min-h-screen flex flex-col pt-32 bg-secondary/10">
+    <section
+      id="contact"
+      className="snap-start min-h-screen flex flex-col pt-32 bg-secondary/10"
+    >
       <div className="container mx-auto px-4 w-full flex-1 flex items-center">
         <div className="max-w-4xl mx-auto w-full">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl mb-6">Get In Touch</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl mb-6">
+              Get In Touch
+            </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. 
+              I'm always interested in new opportunities and exciting projects.
               Let's connect and discuss how we can work together!
             </p>
           </div>
@@ -72,7 +83,8 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl mb-4">Lily Shen</h3>
                 <p className="text-primary-foreground/80 mb-4">
-                  Full Stack Developer passionate about creating innovative web solutions and building amazing user experiences.
+                  Full Stack Developer passionate about creating innovative web
+                  solutions and building amazing user experiences.
                 </p>
                 <div className="flex space-x-4">
                   <a
@@ -106,7 +118,9 @@ const Contact = () => {
                   <li>
                     <button
                       onClick={() =>
-                        document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+                        document
+                          .getElementById("about")
+                          ?.scrollIntoView({ behavior: "smooth" })
                       }
                       className="hover:text-primary-foreground transition-colors cursor-pointer"
                     >
@@ -116,7 +130,9 @@ const Contact = () => {
                   <li>
                     <button
                       onClick={() =>
-                        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+                        document
+                          .getElementById("projects")
+                          ?.scrollIntoView({ behavior: "smooth" })
                       }
                       className="hover:text-primary-foreground transition-colors cursor-pointer"
                     >
@@ -126,7 +142,9 @@ const Contact = () => {
                   <li>
                     <button
                       onClick={() =>
-                        document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })
+                        document
+                          .getElementById("skills")
+                          ?.scrollIntoView({ behavior: "smooth" })
                       }
                       className="hover:text-primary-foreground transition-colors cursor-pointer"
                     >
@@ -136,7 +154,9 @@ const Contact = () => {
                   <li>
                     <button
                       onClick={() =>
-                        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                        document
+                          .getElementById("contact")
+                          ?.scrollIntoView({ behavior: "smooth" })
                       }
                       className="hover:text-primary-foreground transition-colors cursor-pointer"
                     >
@@ -159,7 +179,8 @@ const Contact = () => {
 
             <div className="border-t border-primary-foreground/20 pt-8 text-center">
               <p className="text-primary-foreground/80 flex items-center justify-center gap-2">
-                Made with <Heart className="h-4 w-4 text-red-400" /> by Dagm Yibabe © {new Date().getFullYear()}
+                Made with <Heart className="h-4 w-4 text-red-400" /> by Dagm
+                Yibabe © {new Date().getFullYear()}
               </p>
             </div>
           </div>
