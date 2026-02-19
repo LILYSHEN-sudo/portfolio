@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import profileImg from "../assets/profile.png";
 
 const Hero = () => {
