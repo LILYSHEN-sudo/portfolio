@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import profileImg from "../assets/profile.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -22,10 +23,10 @@ const Hero = () => {
             <div className="flex justify-center lg:justify-start order-1 lg:order-1">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/10 rounded-full blur-2xl"></div>
-                <ImageWithFallback
-                  src="https://drive.google.com/file/d/1ZqBQcBNMQy6wBMXezZaUdLyifHXnC4R3/view?usp=drive_link"
+                <img
+                  src={profileImg}
                   alt="Profile"
-                  className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-background"
+                  className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-background"
                 />
               </div>
             </div>

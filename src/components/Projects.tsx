@@ -20,6 +20,8 @@ import {
   Star,
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import travelImg from "../assets/Travel_list.png";
+
 
 const Projects = () => {
   const projects = [
@@ -28,7 +30,7 @@ const Projects = () => {
       title: "Travel Checklist",
       description:
         "A pre-trip packing checklist web application that helps you stay organized before every journey.You can customize lists based on your destination or trip type and check off items as you pack, ensuring you never forget essentials and making travel preparation simple and stress-free.",
-      image: "https://i.postimg.cc/7LYmysFC/Screenshot-2025-07-17-212657.png",
+      image: travelImg,
       category: "Frontend",
       technologies: ["React", "HTML", "CSS", "JavaScript"],
       features: [
