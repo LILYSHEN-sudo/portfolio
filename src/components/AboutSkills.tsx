@@ -115,28 +115,7 @@ const AboutSkills = () => {
     }
   ];
 
-  const skillHighlights = [
-    {
-      icon: <Layout className="h-8 w-8 text-primary" />,
-      title: "Responsive Design",
-      description: "Creating beautiful, mobile-first interfaces that work seamlessly across all devices."
-    },
-    {
-      icon: <Shield className="h-8 w-8 text-primary" />,
-      title: "Security First",
-      description: "Implementing robust security measures and best practices in every application."
-    },
-    {
-      icon: <GitBranch className="h-8 w-8 text-primary" />,
-      title: "Version Control",
-      description: "Expert in Git workflows, branching strategies, and collaborative development."
-    },
-    {
-      icon: <Palette className="h-8 w-8 text-primary" />,
-      title: "UI/UX Focus",
-      description: "Strong eye for design with experience in creating intuitive user experiences."
-    }
-  ];
+
 
   return (
     <section id="about" className="snap-start h-screen overflow-y-auto pt-32 pb-20 bg-secondary/10">
@@ -308,23 +287,7 @@ const AboutSkills = () => {
                 ))}
               </div>
 
-              {/* Key Highlights */}
-              <div className="mb-16">
-                <h3 className="text-2xl md:text-3xl text-center mb-8">Key Strengths</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {skillHighlights.map((highlight, index) => (
-                    <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                      <CardContent className="pt-6">
-                        <div className="flex justify-center mb-4">
-                          {highlight.icon}
-                        </div>
-                        <h4 className="mb-3">{highlight.title}</h4>
-                        <p className="text-sm text-muted-foreground">{highlight.description}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
+              
 
               {/* Current Learning */}
               <Card className="text-center">

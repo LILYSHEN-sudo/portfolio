@@ -53,7 +53,7 @@ const Hero = () => {
               <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
                 Passionate about creating innovative web applications and
                 solving complex problems with clean, efficient code.
-                Specializing in React, Node.js, and modern web technologies.
+                
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

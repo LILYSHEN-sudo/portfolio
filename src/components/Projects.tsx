@@ -21,7 +21,8 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import travelImg from "../assets/Travel_list.png";
-
+import webSearchImg from "../assets/Web_search.png";
+import splitImg from "../assets/Split_bill.png";
 
 const Projects = () => {
   const projects = [
@@ -45,60 +46,60 @@ const Projects = () => {
         github: "https://github.com/LILYSHEN-sudo/Travel-list",
       },
       status: "Live",
-      featured: true,
+      featured: false,
     },
     {
       id: 2,
-      title: "Tenzies",
+      title: "Split-the-bill-calculator",
       description:
-        "A fast-paced dice game where players roll to match all dice to the same number. Built with React for a smooth user experience and interactive gameplay.",
-      image: "https://i.postimg.cc/YCxbZKsK/Screenshot-2025-07-17-212026.png",
+        "A simple and interactive bill-splitting application that helps friends track shared expenses and calculate balances instantly. Users can add friends, record expenses, and see who owes whom in real time, making group payments clear, fair, and stress-free.",
+      image: splitImg,
       category: "Frontend",
-      technologies: ["React", "JavaScript", "CSS", "Vite"],
+      technologies: ["React", "JavaScript", "CSS", "State Management"],
       features: [
-        "Dice rolling mechanic",
-        "Game state persistence",
-        "Winning condition detection",
-        "Responsive and clean UI",
-        "Fast performance with Vite build tool",
+        "Add and manage friends dynamically",
+        "Track individual expenses and shared costs",
+        "Automatic balance calculation",
+        "Color-coded debt indicators for quick insights",
+        "Real-time UI updates using React state",
       ],
       links: {
-        live: "https://tenzies-dagm.vercel.app/",
-        github: "https://github.com/dag12y/Tenzies",
+        live: "https://bill-split-lily-shen.vercel.app/",
+        github: "https://github.com/LILYSHEN-sudo/BillSplit",
       },
       status: "Live",
       featured: false,
     },
     {
       id: 3,
-      title: "Chef-AI",
+      title: "Web-Search-AI-Agent",
       description:
-        "An AI-powered recipe suggestion app that generates personalized cooking ideas based on available ingredients. Built with React and powered by modern AI APIs.",
-      image: "https://i.postimg.cc/L6xJbx3Q/image.png",
+        "A full-stack application with a Python FastAPI backend and React frontend that can search the web and provide intelligent answers to your questions.",
+      image: webSearchImg,
       category: "Full-Stack",
-      technologies: ["React", "JavaScript", "CSS", "AI APIs", "Vite"],
+      technologies: ["Python", "React", "OpenAI", "RAG", "FastAPI"],
       features: [
-        "AI-driven recipe generation",
-        "Ingredient-based search",
-        "User-friendly interface",
-        "Responsive design",
-        "Fast loading with Vite",
+        "Python async programming with FastAPI",
+        "React frontend with TypeScript",
+        "OpenAI-compatible API integration",
+        "RAG (Retrieval-Augmented Generation)",
+        "AI Agent architecture (ReAct pattern)",
       ],
       links: {
-        live: "https://chef-ai-two.vercel.app/",
-        github: "https://github.com/dag12y/Chef-AI",
+        live: "https://web-search-ai-agent-zuzl.vercel.app/",
+        github: "https://github.com/LILYSHEN-sudo/Web-Search-AI-Agent",
       },
       status: "Live",
       featured: true,
     },
   ];
   const categories = [
-    "All",
     "Featured",
     "Full-Stack",
     "Frontend",
     "Mobile",
     "Tools",
+    "All"
   ];
   const [selectedCategory, setSelectedCategory] = useState("All");
 

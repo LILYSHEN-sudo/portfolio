@@ -179,8 +179,7 @@ const Contact = () => {
 
             <div className="border-t border-primary-foreground/20 pt-8 text-center">
               <p className="text-primary-foreground/80 flex items-center justify-center gap-2">
-                Made with <Heart className="h-4 w-4 text-red-400" /> by Dagm
-                Yibabe © {new Date().getFullYear()}
+                Made with <Heart className="h-4 w-4 text-red-400" /> by Lily Shen© {new Date().getFullYear()}
               </p>
             </div>
           </div>

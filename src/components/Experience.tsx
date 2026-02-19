@@ -17,7 +17,7 @@ const Experience = () => {
   >("experience");
   const experiences = [
     {
-      title: "Software Engineer – IT Systems",
+      title: "Software Engineer – AI Systems",
       company: "San Jose State University",
       location: "San Jose, CA",
       period: "2024 - Present",
